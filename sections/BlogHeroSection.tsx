@@ -138,3 +138,13 @@
 // };
 
 // export default BlogHeroSection;
+
+import React from 'react'
+
+function BlogHeroSection() {
+  return (
+    <div>BlogHeroSection</div>
+  )
+}
+
+export default BlogHeroSection
