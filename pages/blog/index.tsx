@@ -2,7 +2,7 @@ import type { GetStaticProps, NextPage } from "next";
 import { MdxMeta } from "./posts/[slug]";
 
 import AppHead from "@/components/AppHead";
-import BlogHeroSection from "@/sections/BlogHeroSection";
+// import BlogHeroSection from "@/sections/BlogHeroSection";
 import SkipToMain from "@/components/SkipToMain";
 import SocialLinks from "@/components/SocialLinks";
 // import BlogHeader from "@/components/blog/BlogHeader";
@@ -28,7 +28,7 @@ const Blog: NextPage<Props> = ({ posts }) => {
           {/* <BlogHeader /> */}
           <SocialLinks />
           <main id="main" className="mb-20">
-            <BlogHeroSection />
+            {/* <BlogHeroSection /> */}
             {searchText === "" && postLanguage === "All" && (
               <>
                 <div className="px-4 sm:px-8 md:px-20 max-w-4xl mx-auto">
