@@ -1,115 +1,90 @@
-<!-- ---
+---
 coverImageWidth: "1200"
 coverImageHeight: "700"
-datetime: 2025-05-16T13:00:00Z
+datetime: 2022-06-09T03:42:51Z
 tags:
-  - DeFi
-  - AI
-  - IOTA
-  - EVM
-  - React
+  - JavaScript
+  - ReactJS
+  - ContextAPI
+  - Styled-Components
   - TypeScript
-  - Vite
 author: Sat Naing
 type: article
 coverImage: https://res.cloudinary.com/noezectz/image/upload/v1654754125/SatNaing/terminal-screenshot_gu3kkc.png
-coverImageAlt: DeFintellect Dashboard Screenshot
-title: DeFintellect - AI-Powered DeFi Portfolio Navigator for IOTA EVM
-description: An AI-driven DeFi portfolio navigator optimized for the IOTA EVM network, offering intelligent insights, on-chain analysis, and real-time market data.
-excerpt: Advanced portfolio optimization and on-chain analytics powered by AI for IOTA EVM DeFi.
-slug: de-fintellect-ai-powered-defi-portfolio-navigator-for-iota-evm
+coverImageAlt: Screenshot of Terminal Portfolio Website
+title: How Do I Develop My Terminal Portfolio Website with React
+description:
+  Sat Naing's React terminal portfolio website. Styled-components is used
+  for styling; and multiple themes supported.
+excerpt:
+  Developing a terminal-like website using ReactJS, TypeScript and Styled-Components.
+  Includes features like autocomplete, multiple themes, command hints etc.
+slug: how-do-i-develop-my-terminal-portfolio-website-with-react
 featured: true
-category: DeFi
+category: How Do I
 ---
 
-Advanced portfolio optimization and on-chain analytics powered by AI for IOTA EVM DeFi.
+Developing a terminal-like website using ReactJS, TypeScript and Styled-Components. Includes features like autocomplete, multiple themes, command hints etc.
 
-## Overview
+## Intro
 
-DeFintellect is a next-generation portfolio navigator for the IOTA EVM network, leveraging artificial intelligence to deliver personalized investment insights. Users gain access to real-time on-chain analytics, whale monitoring, and AI-driven allocation suggestions in one seamless interface.
-
-## Key Features
-
-- **AI-Powered Portfolio Optimization**: Dynamic allocation recommendations based on market conditions, risk profile, and historical performance.
-- **Natural Language Interface**: Conversational AI for querying portfolio metrics and market analysis.
-- **On-Chain Analysis**: Track large transactions and protocol metrics via IOTA Explorer data.
-- **Market Intelligence**: In-depth trend and token fundamental analysis with CoinGecko integration.
-- **Yield Comparison**: Evaluate DeFi protocol rewards to optimize returns.
-- **Performance Tracking**: Custom chart visualizations for portfolio performance over time.
-- **Token Management**: Unified dashboard to manage all IOTA EVM tokens.
+Recently, I've developed and published my portfolio + a blog. I’m glad I got some good feedback for it. Today, I want to introduce my new terminal-like portfolio website. It is developed using ReactJS, TypeScript. I got this idea from CodePen and YouTube.
 
 ## Tech Stack
 
-- **Frontend**: React (TypeScript)
-- **UI**: Tailwind CSS + shadcn/ui
-- **State Management**: React Query
-- **Build Tool**: Vite
-- **AI API**: Google Gemini 2.5 Pro
-- **Data APIs**: CoinGecko, IOTA Explorer
+This project is a frontend project without any backend codes. The UI/UX part is designed in Figma. For the frontend user-interface, I chose React over pain JavaScript and NextJS. Why?
 
-## Getting Started
+- Firstly, I want to write declarative code. Managing HTML DOM using JavaScript imperatively is really tedious.
+- Secondly, because it is React!!! It is fast, and reliable.
+- Lastly, I don’t need much of the SEO features, routing and image optimization provided by NextJS.
 
-```bash
-git clone https://github.com/johnnyduo/AToIoTA.git
-cd atoiota
-npm install
-cp .env.example .env
-npm run dev
-```
+And of course there's TypeScript for type checking.
 
-## Environment Variables
+For styling, I took a different approach than what I usually do. Instead of choosing Pure CSS, Sass, or Utility CSS Framework like TailwindCSS, I chose the CSS-in-JS way (Styled-Components). Although I’ve known about Styled-Components for some time, I’ve never tried it out. So, the writing style and structures of Styled-Components in this project may not be very organized or very good.
 
-Create a `.env` file in the project root with:
+This project doesn’t need very complex state management. I just use ContextAPI in this project for multiple theming and to avoid prop drilling.
 
-```bash
-VITE_GEMINI_API_KEY=your_gemini_api_key_here
-VITE_COINGECKO_API_URL=https://api.coingecko.com/api/v3
-VITE_CONTRACT_ADDRESS=0xYourContractAddress
-```
+Here’s a quick recap for the tech stack.
 
-## Deployment
+- Frontend: [ReactJS](https://reactjs.org/ "React Website"), [TypeScript](https://www.typescriptlang.org/ "TypeScript Website")
+- Styling: [Styled-Components](https://styled-components.com/ "Styled-Components Website")
+- UI/UX: [Figma](https://figma.com/ "Figma Website")
+- State Management: [ContextAPI](https://reactjs.org/docs/context.html "React ContextAPI")
+- Deployment: [Netlify](https://www.netlify.com/ "Netlify Website")
 
-```bash
-npm run build     # build for production
-npm run preview   # preview production build
-```
+## Features
 
-Smart contract for portfolio allocation is deployed on the IOTA EVM testnet (address in `.env`). Verify on IOTA Testnet Explorer.
+Here are some features of the project.
 
-## Usage Guidelines
+### Multiple Themes
 
-- AI insights are educational and not financial advice.
-- Always verify data through official sources.
-- No user-sensitive data is stored.
+Users can change multiple themes. At the time of writing this post, there are 5 themes; and more themes will probably be added in the future. The selected theme is saved in local storage so that the theme won’t change on page refresh.
 
-## Demo & Screenshots
+![Setting different theme](https://i.ibb.co/fSTCnWB/terminal-portfolio-multiple-themes.gif)
 
-**Live Demo**: [https://de-fintellect.vercel.app/](https://de-fintellect.vercel.app/)
+### Command-line Completion
 
-## Team
+To look and feel as close to the actual terminal as possible, I put a command-line completion feature which auto fills in partially typed commands by simply pressing ‘Tab’ or ‘Ctrl + i’.
 
-Created for IOTA Moveathon 2025 (DeFAI track) by JohnnyDuo and contributors.
+![Demonstrating command-line completion](https://i.ibb.co/CQTGGLF/terminal-autocomplete.gif)
 
-## Roadmap
+### Previous Commands
 
-### Q2 2025
+Users can go back to the previous commands or navigate the previously typed commands by pressing Up & Down Arrows.
 
-- MVP launch with AI integration and testnet deployment
+![Going back to previous commands with UP Arrow](https://i.ibb.co/vD1pSRv/terminal-up-down.gif)
 
-### Q3 2025
+### View/Clear Command History
 
-- ElizaOS plugin, advanced whale alerts
+previously typed commands can be viewed by typing ‘history’ in the command line. All the command history and terminal screen can be wiped out by typing ‘clear’ or pressing ‘Ctrl + l’.
 
-### Q4 2025
+![Clearing the terminal with 'clear' or 'Ctrl + L' command](https://i.ibb.co/SJBy8Rr/terminal-clear.gif)
 
-- Mainnet launch, multi-chain support, institutional features
+## Outro
 
-### 2026
+This is a really fun project, and one special part of this project is I had to focus on logic rather than user-interface (even though this is kind of a frontend project).
 
-- DAO governance, global expansion, TradFi integrations
+## Project Links
 
-## Acknowledgments
-
-- IOTA Foundation
-- Google Gemini API
-- Open Source Community -->
+- Website: [https://terminal.satnaing.dev/](https://terminal.satnaing.dev/ "https://terminal.satnaing.dev/")
+- Repo: [https://github.com/satnaing/terminal-portfolio](https://github.com/satnaing/terminal-portfolio "https://github.com/satnaing/terminal-portfolio")

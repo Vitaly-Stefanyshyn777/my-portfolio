@@ -22,7 +22,7 @@ const AppHead: React.FC<Props> = ({
   url = `${process.env.NEXT_PUBLIC_URL}/blog`,
   meta,
 }) => {
-  let author = "";
+  let author = "Sat Naing";
   let description =
     "Articles about programming, coding, technologies, software engineering, my personal projects and my experiences.";
   let siteName = "Sat Naing's Blog";

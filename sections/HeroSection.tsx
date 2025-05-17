@@ -124,7 +124,7 @@ const HeroSection: React.FC = () => {
         </span>
         <div className="overflow-hidden">
           <h1 className="text-animation text-4xl md:text-5xl lg:text-7xl md:my-2 font-semibold my-1">
-            Vitaliy Stefanyshyn
+            Sat Naing
           </h1>
         </div>
         <div className="overflow-hidden">
@@ -138,23 +138,16 @@ const HeroSection: React.FC = () => {
             exceptional results.
           </p>
           <p>
-            With my expertise in React and NextJS on the frontend, and, NodeJS,
-            and Express on the backend, I bring a unique combination of
-            technical skills and creative problem-solving to every project I
-            work on.
+            With my expertise in React and NextJS on the frontend, and PHP,
+            CodeIgniter, NodeJS, and Express on the backend, I bring a unique
+            combination of technical skills and creative problem-solving to
+            every project I work on.
           </p>
         </div>
-        <div className="flex gap-4">
-          <LinkButton href={`tel:${process.env.NEXT_PUBLIC_PHONE}`}>
-            Contact phone
-            {/* {process.env.NEXT_PUBLIC_PHONE} */}
-          </LinkButton>
-          <LinkButton href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>
-            Contact email
-          </LinkButton>
-        </div>
+        <LinkButton href={`mailto:${process.env.NEXT_PUBLIC_EMAIL}`}>
+          Contact me!
+        </LinkButton>
       </div>
-
       <a
         href="#whoami"
         className="group absolute link-outline animate-bounce hidden md:bottom-14 lg:bottom-16 left-1/2 transform -translate-x-1/2 md:flex items-center flex-col"

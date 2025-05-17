@@ -5,7 +5,7 @@ import gsap from "gsap";
 import AppHead from "@/components/AppHead";
 import SkipToMain from "@/components/SkipToMain";
 import SocialLinks from "@/components/SocialLinks";
-// import BlogHeader from "@/components/blog/BlogHeader";
+import BlogHeader from "@/components/blog/BlogHeader";
 import BlogCard from "@/components/BlogCard";
 import Footer from "@/components/Footer";
 import { getAllPosts } from "utils/api";
@@ -44,7 +44,7 @@ const Blog: NextPage<Props> = ({ posts, category }) => {
       <div ref={sectionRef} className="bg-bglight dark:bg-bgdark">
         <div className="selection:bg-marrsgreen selection:text-bglight dark:selection:bg-carrigreen dark:selection:text-bgdark">
           <SkipToMain />
-          {/* <BlogHeader /> */}
+          <BlogHeader />
           <SocialLinks />
           <main id="main" className="blog-main">
             <section className="blog-section">
@@ -69,21 +69,15 @@ const Blog: NextPage<Props> = ({ posts, category }) => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const category = params?.category;
-
-  if (typeof category !== "string") {
-    return { notFound: true };
-  }
-
   const posts = getAllPosts(
     ["slug", "title", "excerpt", "datetime", "category"],
-    category
+    params!.category as string
   );
 
   return {
     props: {
       posts,
-      category,
+      category: params!.category,
     },
   };
 };
@@ -92,15 +86,16 @@ export const getStaticPaths: GetStaticPaths = () => {
   const posts = getAllPosts(["category"]);
   const categories = posts
     .map((post) => post.category)
-    .filter((category): category is string => typeof category === "string")
-    .filter((x, i, a) => a.indexOf(x) === i);
+    .filter((x, i, a) => a.indexOf(x) == i);
 
   return {
-    paths: categories.map((category) => ({
-      params: {
-        category: slugify(category),
-      },
-    })),
+    paths: categories.map((category) => {
+      return {
+        params: {
+          category: slugify(category as string),
+        },
+      };
+    }),
     fallback: false,
   };
 };

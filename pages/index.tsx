@@ -8,7 +8,7 @@ import SocialLinks from "@/components/SocialLinks";
 import HeroSection from "@/sections/HeroSection";
 import AboutSection from "@/sections/AboutSection";
 import ProjectSection from "@/sections/ProjectSection";
-// import BlogSection from "@/sections/BlogSection";
+import BlogSection from "@/sections/BlogSection";
 import ContactSection from "@/sections/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -37,7 +37,7 @@ const Home: NextPage<Props> = ({ blogPosts }) => {
         url={`${process.env.NEXT_PUBLIC_URL}`}
         meta={meta}
       />
-      <Loader>Vitaliy.dev</Loader>
+      <Loader>SatNaing.dev</Loader>
       <div className="bg-bglight dark:bg-bgdark overflow-hidden">
         <div className="selection:bg-marrsgreen selection:text-bglight dark:selection:bg-carrigreen dark:selection:text-bgdark">
           <SkipToMain />
@@ -46,7 +46,7 @@ const Home: NextPage<Props> = ({ blogPosts }) => {
             <HeroSection />
             <AboutSection />
             <ProjectSection />
-            {/* <BlogSection posts={blogPosts} /> */}
+            <BlogSection posts={blogPosts} />
             <ContactSection />
           </main>
           <SocialLinks page="index" />

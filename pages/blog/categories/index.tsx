@@ -6,7 +6,7 @@ import gsap from "gsap";
 import AppHead from "@/components/AppHead";
 import SkipToMain from "@/components/SkipToMain";
 import SocialLinks from "@/components/SocialLinks";
-// import BlogHeader from "@/components/blog/BlogHeader";
+import BlogHeader from "@/components/blog/BlogHeader";
 import BlogCardBox from "@/components/BlogCardBox";
 import Footer from "@/components/Footer";
 import Loader from "@/components/Loader";
@@ -68,7 +68,7 @@ const Blog: NextPage<Props> = ({ categories, categorizedPosts }) => {
       <div ref={sectionRef} className="bg-bglight dark:bg-bgdark">
         <div className="selection:bg-marrsgreen selection:text-bglight dark:selection:bg-carrigreen dark:selection:text-bgdark">
           <SkipToMain />
-          {/* <BlogHeader /> */}
+          <BlogHeader />
           <SocialLinks />
           <main id="main" className="blog-main">
             <section className="blog-section">

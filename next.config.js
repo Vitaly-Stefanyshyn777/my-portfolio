@@ -1,14 +1,6 @@
 /** @type {import('next').NextConfig} */
+
 module.exports = {
-  images: {
-    domains: ["res.cloudinary.com", "github.com"],
-  },
-  reactStrictMode: true,
-  trailingSlash: false,
-  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx", "html"],
-  compiler: {
-    removeConsole: true,
-  },
   async redirects() {
     return [
       {
@@ -19,7 +11,18 @@ module.exports = {
       },
     ];
   },
+  // Append the default value with md extensions
+  pageExtensions: ["ts", "tsx", "js", "jsx", "md", "mdx", "html"],
+  reactStrictMode: true,
+  trailingSlash: false,
+  images: {
+    domains: ["res.cloudinary.com"],
+  },
+  compiler: {
+    removeConsole: true,
+  },
 };
+
 // const nextConfig = {
 //   reactStrictMode: true,
 // }
