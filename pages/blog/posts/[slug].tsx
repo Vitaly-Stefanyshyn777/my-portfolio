@@ -3,17 +3,17 @@ import Script from "next/script";
 import { GetStaticPaths, GetStaticProps } from "next";
 import { useTheme } from "next-themes";
 
-import BlogHeader from "@/components/blog/BlogHeader";
+// import BlogHeader from "@/components/blog/BlogHeader";
 import SkipToMain from "@/components/SkipToMain";
 import SocialLinks from "@/components/SocialLinks";
 import AppHead, { Meta } from "@/components/AppHead";
 import Footer from "@/components/Footer";
 import markdownToHtml from "utils/markdownToHtml";
 import { getAllPosts, getPostBySlug } from "utils/api";
-import PostBody from "@/components/blog/PostBody";
-import Tag from "@/components/blog/Tag";
+// import PostBody from "@/components/blog/PostBody";
+// import Tag from "@/components/blog/Tag";
 import DateTime from "@/components/DateTime";
-import HeadCategory from "@/components/blog/HeadCategory";
+// import HeadCategory from "@/components/blog/HeadCategory";
 
 export interface MdxMeta extends Meta {
   title: string;
@@ -57,7 +57,7 @@ const BlogLayout: React.FC<Props> = ({ post }) => {
       <div className="bg-bglight dark:bg-bgdark">
         <div className="selection:bg-marrsgreen selection:text-bglight dark:selection:bg-carrigreen dark:selection:text-bgdark">
           <SkipToMain />
-          <BlogHeader />
+          {/* <BlogHeader /> */}
           <SocialLinks />
           <main id="main" className="blog-main">
             <article className="blog-section">
@@ -67,14 +67,14 @@ const BlogLayout: React.FC<Props> = ({ post }) => {
               <div className="mt-2 mb-1 italic text-marrsdark dark:text-carrigreen">
                 <DateTime datetime={post.datetime} />
               </div>
-              <HeadCategory category={post.category} />
-              {post.tags && (
+              {/* <HeadCategory category={post.category} /> */}
+              {/* {post.tags && (
                 <div className="my-2">
                   {post.tags.map((tag: string) => (
                     <Tag tag={tag} key={tag} />
                   ))}
                 </div>
-              )}
+              )} */}
               {post.coverImage && (
                 <div className="bg-cardlight dark:bg-carddark">
                   <Image
@@ -88,7 +88,7 @@ const BlogLayout: React.FC<Props> = ({ post }) => {
                   />
                 </div>
               )}
-              <PostBody content={post.content} />
+              {/* <PostBody content={post.content} /> */}
 
               {/* <hr /> */}
 

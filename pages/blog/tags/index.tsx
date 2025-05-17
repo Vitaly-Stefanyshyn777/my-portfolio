@@ -5,8 +5,8 @@ import gsap from "gsap";
 import AppHead from "@/components/AppHead";
 import SkipToMain from "@/components/SkipToMain";
 import SocialLinks from "@/components/SocialLinks";
-import BlogHeader from "@/components/blog/BlogHeader";
-import Tag from "@/components/blog/Tag";
+// import BlogHeader from "@/components/blog/BlogHeader";
+// import Tag from "@/components/blog/Tag";
 import Footer from "@/components/Footer";
 import { getAllPosts } from "utils/api";
 import Loader from "@/components/Loader";
@@ -45,7 +45,7 @@ const Blog: NextPage<Props> = ({ tags, tagCounts }) => {
       <div ref={sectionRef} className="bg-bglight dark:bg-bgdark min-h-screen">
         <div className="selection:bg-marrsgreen selection:text-bglight dark:selection:bg-carrigreen dark:selection:text-bgdark">
           <SkipToMain />
-          <BlogHeader />
+          {/* <BlogHeader /> */}
           <SocialLinks />
           <main id="main" className="blog-main">
             <section className="blog-section">
@@ -54,7 +54,7 @@ const Blog: NextPage<Props> = ({ tags, tagCounts }) => {
                 {tags &&
                   tags.map((tag: string) => (
                     <li className="inline-block" key={tag}>
-                      <Tag tag={tag} size="lg" count={tagCounts[tag]} />
+                      {/* <Tag tag={tag} size="lg" count={tagCounts[tag]} /> */}
                     </li>
                   ))}
               </ul>
