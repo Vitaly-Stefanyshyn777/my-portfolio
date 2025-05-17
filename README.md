@@ -74,8 +74,3 @@ Here are some inspiration and credits for the design of my portfolio. However I 
 - [Brittany Chiang Website](https://brittanychiang.com/)
 - [Max Böck Website](https://mxb.dev/)
 
-The digital art in the hero section was illustrated by a friend of mine ([Swann Fevian Kyaw](https://www.facebook.com/bon.zai.3910) [@ToonHa](https://www.facebook.com/ToonHa-102639465752883))
-
-## Author
-
-- [@satnaing](https://satnaing.dev)
