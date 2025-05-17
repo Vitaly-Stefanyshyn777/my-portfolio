@@ -86,16 +86,15 @@ export const getStaticPaths: GetStaticPaths = () => {
   const posts = getAllPosts(["category"]);
   const categories = posts
     .map((post) => post.category)
-    .filter((x, i, a) => a.indexOf(x) == i);
+    .filter((category): category is string => typeof category === "string")
+    .filter((x, i, a) => a.indexOf(x) === i);
 
   return {
-    paths: categories.map((category) => {
-      return {
-        params: {
-          category: slugify(category as string),
-        },
-      };
-    }),
+    paths: categories.map((category) => ({
+      params: {
+        category: slugify(category),
+      },
+    })),
     fallback: false,
   };
 };
