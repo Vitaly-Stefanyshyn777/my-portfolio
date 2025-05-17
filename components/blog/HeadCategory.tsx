@@ -35,3 +35,13 @@
 // };
 
 // export default HeadCategory;
+
+import React from 'react'
+
+function HeadCategory() {
+  return (
+    <div>HeadCategory</div>
+  )
+}
+
+export default HeadCategory
