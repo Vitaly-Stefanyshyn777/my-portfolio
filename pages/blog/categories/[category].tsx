@@ -69,15 +69,21 @@ const Blog: NextPage<Props> = ({ posts, category }) => {
 };
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const category = params?.category;
+
+  if (typeof category !== "string") {
+    return { notFound: true };
+  }
+
   const posts = getAllPosts(
     ["slug", "title", "excerpt", "datetime", "category"],
-    params!.category as string
+    category
   );
 
   return {
     props: {
       posts,
-      category: params!.category,
+      category,
     },
   };
 };
