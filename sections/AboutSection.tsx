@@ -9,6 +9,7 @@ import { useSection } from "context/section";
 import useOnScreen from "hooks/useOnScreen";
 import useScrollActive from "hooks/useScrollActive";
 
+// import satNaing from "../public/my.jpeg";
 import satNaing from "../public/satnaing.webp";
 import AboutBgSvg from "@/components/AboutBgSvg";
 import EduGroup from "@/components/EduGroup";
@@ -169,11 +170,11 @@ const AboutSection: React.FC = () => {
             </div>
 
             <p className="col-start-1 col-end-3 row-start-4 row-end-6 lg:row-start-1 lg:row-end-2 lg:col-start-3 lg:col-end-6 lg:ml-8 lg:mt-auto about-intro">
-              With 4+ years of comprehensive experience in web application
-              development, I have polished my skills in both frontend and
-              backend development. In addition to my hands-on experience in web
-              development, my education has also played a critical role in
-              providing a strong foundation for my career.
+              Self-taught web developer with a strong grasp of modern
+              technologies like React, TypeScript, Node.js, and MongoDB. Through
+              personal projects and continuous learning, I confidently build
+              responsive, full-stack applications and focus on writing clean,
+              scalable code.
             </p>
 
             <div
@@ -197,28 +198,13 @@ const AboutSection: React.FC = () => {
 const educationInfo = [
   {
     id: 1,
-    title: "B.Sc (Hons) in Computing",
-    subTitle: "Edinburgh Napier University | 2018 ~ 2019",
+    title: "Software Engineering Student",
+    subTitle: "Kyiv College of Computer Technologies | 2022 – Present",
     list: [
-      "Studied computer science, software development, DevOps",
-      "Graduated with First Class Honours",
-      "Got merit in 7 modules out of 9",
+      "Currently pursuing a degree in software engineering",
+      "Studying web development, databases, and computer systems",
+      "Actively working on personal and team-based coding projects",
     ],
-  },
-  {
-    id: 2,
-    title: "HND in Computing & System Development",
-    subTitle: "Info Myanmar University | 2016 - 2018",
-    list: [
-      "Studied modules specializing in software development",
-      "Passed HND with overall Merit",
-    ],
-  },
-  {
-    id: 3,
-    title: "IELTS",
-    subTitle: "British Council Myanmar | 2017",
-    list: ["Got overall band score 6.5."],
   },
 ];
 
