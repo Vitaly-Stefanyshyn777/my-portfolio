@@ -1,7 +1,7 @@
 ---
 coverImageWidth: "1200"
 coverImageHeight: "700"
-datetime: 2022-03-25T16:55:12.000+00:00
+datetime: "2024-03-25"
 tags:
   - NextJS
   - TailwindCSS
@@ -9,12 +9,12 @@ tags:
   - Blog
 author: Sat Naing
 type: article
-coverImage: https://res.cloudinary.com/noezectz/image/upload/v1653050141/SatNaing/blog_at_cafe_ei1wf4.jpg
+coverImage: /portfolio.png
 coverImageAlt: Macbook at a cafe
 title: How Do I Develop My Portfolio Website & Blog
-description:
-  My experience about developing my first portfolio website and a blog
-  using NextJS and a headless CMS.
+# description:
+#   My experience about developing my first portfolio website and a blog
+#   using NextJS and a headless CMS.
 excerpt:
   My journey about planning, designing and developing my very first portfolio
   website and my personal blog. Thoughts about my motivation for this project and
@@ -57,18 +57,6 @@ In conclusion, these are the tech stack I've used for this project.
 
 The following are certain features of my portfolio and blog
 
-### SEO Friendly
-
-The entire project is developed with SEO focus in mind. I've used proper meta tags, descriptions and heading alignments. This website is now indexed by Google.
-
-> You can search this website on google by using keywords like 'sat naing dev'
-
-![searching satnaing.dev on google](https://res.cloudinary.com/noezectz/image/upload/v1648231400/SatNaing/satnaing-on-google_asflq6.png "satnaing.dev is indexed")
-
-Moreover, this website will be displayed well when shared to social media due to properly used meta tags.
-
-![satnaing.dev card layout when shared to Facebook](https://res.cloudinary.com/noezectz/image/upload/v1653106955/SatNaing/satnaing-dev-share-on-facebook_1_zjoehx.png "Card layout when shared to Facebook")
-
 ### Dynamic Sitemap
 
 Sitemap plays an important part in SEO. Because of this, every single page of this site should be included in sitemap.xml. I made an auto generated sitemap in my website whenever I create a new content or tags or categories.
@@ -95,8 +83,6 @@ This website got very good performance and lighthouse score thanks to proper dev
 
 Initially I used [Framer Motion](https://www.framer.com/motion/ "Framer Motion") to add animations and micro interactions for this website. However, when I tried to use some complex animations and parallax effects, I found it inconvenient to integrate with Framer Motion (Maybe I'm not very good at and used to working with it). Hence, I decided to use [GSAP](https://greensock.com/ "GSAP Animation Library") for all of my animations. It is one of the most popular animation library and it is capable of doing complex and advanced animations. You can see animations and micro interactions on pretty much every page of this website.
 
-![animations at satnaing.dev](https://res.cloudinary.com/noezectz/image/upload/v1653108324/SatNaing/ezgif.com-gif-maker_2_hehtlm.gif "satnaing.dev website")
-
 ## Outro
 
 In conclusion, this project gives me a lot of experience and confidence about developing blog site (SSG). Now, I have gained knowledge of git-based CMS and how it interacts with NextJS. I've also learned about SEO, dynamic sitemap generation and indexing Google procedures. I will make better projects in the future. So, stay tuned! ✌🏻
@@ -105,6 +91,6 @@ And... last but not least, I would like to say 'thanks' to my friend [Swann Fevi
 
 ## Project Links
 
-- Website: [https://satnaing.dev/](https://satnaing.dev/ "https://satnaing.dev/")
-- Blog: [https://satnaing.dev/blog](https://satnaing.dev/blog "https://satnaing.dev/blog")
-- Repo: [https://github.com/satnaing/my-portfolio](https://github.com/satnaing/my-portfolio "https://github.com/satnaing/my-portfolio")
+- Website: [https://my-portfolio-7hnp.vercel.app/](https://my-portfolio-7hnp.vercel.app/ "https://my-portfolio-7hnp.vercel.app/")
+- Blog: [https://my-portfolio-7hnp.vercel.app/blog](https://my-portfolio-7hnp.vercel.app/blog "https://my-portfolio-7hnp.vercel.app/blog")
+- Repo: [https://github.com/Vitaly-Stefanyshyn777/my-portfolio](https://github.com/Vitaly-Stefanyshyn777/my-portfolio "https://github.com/Vitaly-Stefanyshyn777/my-portfolio")

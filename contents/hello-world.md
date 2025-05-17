@@ -1,53 +1,98 @@
 ---
-title: Haru Fashion ecommerce ကိုဘယ်လိုရေးခဲ့လဲ
-description: Haru Fashion e-commerce application တစ်ခုကိုကျွန်တော် ဘယ်လိုရေးခဲ့သလဲ
-excerpt:
-  ကျွန်တော်ရေးခဲ့တဲ့ Haru Fashion ဆိုတဲ့ e-commerce အကြောင်း၊ အသုံးပြုခဲ့တဲ့
-  technologies တွေရယ်၊ ရေးခဲ့စဥ်မှာကြုံခဲ့ရတဲ့ အတွေ့အကြုံတွေအကြောင်း
-datetime: 2022-03-20T05:35:07.322+00:00
-slug: how-i-made-haru
+title: How I Built Pet-Store
+description: How I built the AI-driven pet store application
+excerpt: In this post, I talk about the AI-powered Pet-Store app we built, the technologies we used, and the experiences we had while developing it.
+datetime: "2024-03-20"
+# slug: how-i-built-pet-store
 featured: true
 category: How Do I
 tags:
-  - JavaScript
+  - TypeScript
   - NextJS
-  - ContextAPI
+  - Zustand
+  - Prisma
+  - PostgreSQL
   - TailwindCSS
-author: Sat Naing
-coverImage: https://res.cloudinary.com/noezectz/image/upload/v1647688482/SatNaing/haru-fashion-og_qotvvg.png
-coverImageAlt: Haru Fashion website on a laptop and a mobile device
+  - AI
+  - Pet Store
+  - JWT
+author: Vitalik Stefanisin
+coverImage: /petvally.png
+coverImageAlt: Screenshot of the Pet Store website
 coverImageWidth: "1200"
 coverImageHeight: "700"
-ogImage: https://res.cloudinary.com/noezectz/image/upload/v1647688482/SatNaing/haru-fashion-og_qotvvg.png
-ogImageAlt: Haru Fashion
+ogImage: /images/pet-store-preview.png
+ogImageAlt: Pet Store
 type: article
-language: "Myanmar"
+language: "English"
 ---
 
-ကျွန်တော် Haru Fashion ဆိုတဲ့ e-commerce application ကိုဘယ်လိုရေးခဲ့လဲဆိုတာကို ဒီ post မှာ ရေးသွားမှာဖြစ်ပါတယ်။
+---
+
+In this post, I will share how we built an AI-driven pet store platform that connects pet owners with products, services, and veterinarians.
 
 ## Tech Stack
 
-ဒီ application ကိုတော့ NextJS နဲ့အဓိက ရေးထားတာဖြစ်ပြီး type saving အတွက် TypeScript ကိုသုံးထားတာဖြစ်ပါတယ်။ Styling အတွက်ကတော့ Tailwind CSS ကိုသုံးထားပြီး state management အတွက်တော့ React ရဲ့ Context API ကိုပဲအသုံးပြုထားပါတယ်။ Backend အတွက်တော့ အစက Firebase ကိုသုံးထားတာပါ။ ဒါပေမယ့် Firebase မှာ တချို့လိုချင်တဲ့ feature တွေမရတာတစ်ကြောင်း၊ ကိုယ်တိုင်က Backend ကိုစမ်းချင်တာက တစ်ကြောင်းကြောင့် နောက်ပိုင်း Haru fashion အတွက် backend API တစ်ခုကို Express, Prisma, PostgreSQL တို့နဲ့ရေးဖြစ်သွားတယ်။
+This platform is powered by a modern full-stack environment built with TypeScript and NextJS. We use TailwindCSS for styling, Zustand for lightweight global state management, and Prisma + PostgreSQL via NeonDB for the backend database layer. Authentication is handled using JWT. File and image assets are managed via Cloudinary. For animations and visuals, we use GSAP and LottieFiles.
 
-> ဒီ app ရဲ့ Firebase version ကို ဒီ app ရဲ့ Github repository release မှာကြည့်နိုင်
+The system also integrates AI features to enhance product recommendations, search filtering, and veterinary service suggestions based on pet profiles.
+
+> All environment variables and Prisma schema configurations are required before running locally.
 
 ## Features
 
-ဒီ application မှာပါဝင်တဲ့ အဓိက feature တွေကတော့
+Some of the core features include:
 
-- Progressive Web App (PWA) 🔥
-- Full-text Search 🔎
-- Responsive Design 📱💻
-- Wishlist 🤍
-- Add To Cart 🛒
-- Different Category Page 🧑🏻👩🏻🎒
-- Authentication (Register/Login/Logout) 🛡️
-- Pagination ⬅️➡️
-- Animation ✨
-- i18n (English & Burmese) 🌐
-- Accessibility
+- AI-Powered Product & Vet Recommendations 🤖
+- Full Pet Catalog & Product Filtering 🐶🐱
+- Secure Authentication (JWT-based) 🔐
+- Responsive UI and Tailwind Design 🎨
+- Image Uploads via Cloudinary ☁️
+- Pet Owner and Vet User Roles 🧑‍⚕️
+- Animations using GSAP and Lottie ✨
+- Realtime Filtering and Zustand State 🧠
+- PostgreSQL Database via NeonDB 🐘
+- Accessible Interface & SEO Optimization 🌍
+
+## Team
+
+- @Rafi
+- @Wasi
+- @Montasir
+- @Mahi
+
+## Getting Started
+
+1. Clone the repo and run:
+
+```bash
+npm install
+```
+
+2. Create a `.env` file in the root with:
+
+```bash
+DATABASE_URL=your_database_url_here
+JWT_SECRET=your_jwt_secret_here
+CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+```
+
+3. Push the database and seed it:
+
+```bash
+npx prisma db push
+npx prisma generate
+npx prisma db seed
+```
+
+4. Start development server:
+
+```bash
+npm run dev
+```
 
 ## Conclusion
 
-ကဲ ဒီနေ့တော့ ဒီလောက်ပါပဲ XD
+This platform brings together a smart recommendation engine, a full product catalog, and a veterinary connection service — all designed for the modern pet owner. More enhancements, including AI-based chat, live vet Q&A, and scheduling, are on the roadmap.

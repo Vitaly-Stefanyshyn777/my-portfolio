@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   images: {
-    domains: ["res.cloudinary.com", "github.com"],
+    domains: ["res.cloudinary.com", "github.com", "de-fintellect.vercel.app"],
   },
   reactStrictMode: true,
   trailingSlash: false,

@@ -199,7 +199,7 @@ const educationInfo = [
   {
     id: 1,
     title: "Software Engineering Student",
-    subTitle: "Kyiv College of Computer Technologies | 2022 – Present",
+    subTitle: "Kyiv College of Computer Technologies | 2024 – Present",
     list: [
       "Currently pursuing a degree in software engineering",
       "Studying web development, databases, and computer systems",

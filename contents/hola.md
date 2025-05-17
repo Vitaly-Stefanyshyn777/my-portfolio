@@ -1,17 +1,13 @@
 ---
-title: This is just a testing
-description: This is just an OG description
-excerpt:
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel
-  fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities
-  morbi tempus.
+title: Is Pulse Robot
+description: Pulse Robot is a next-generation humanoid robot platform powered by cutting-edge AI technology, offering human-like interaction, adaptive behavior, and seamless integration into modern systems.
+excerpt: Pulse Robot is a next-generation humanoid robot platform powered by cutting-edge AI technology, offering human-like interaction, adaptive behavior, and seamless integration into modern systems.
 datetime: 2020-06-17T05:35:07.000+00:00
 featured: false
 category: Random
 author: Sat Naing
 type: article
-coverImage: https://res.cloudinary.com/noezectz/image/upload/v1647791837/SatNaing/tip-calculator_mkdj8a.png
+coverImage: /Robot.png
 coverImageAlt: Tip calculator website on a laptop and a mobile device
 coverImageWidth: "2725"
 coverImageHeight: "1400"
@@ -20,14 +16,85 @@ ogImageAlt: something
 language: "English"
 ---
 
-## This is just a testing
+## Pulse Robot
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Praesent elementum facilisis leo vel fringilla est ullamcorper eget. At imperdiet dui accumsan sit amet nulla facilities morbi tempus. Praesent elementum facilisis leo vel fringilla. Congue mauris rhoncus aenean vel. Egestas sed tempus urna et pharetra pharetra massa massa ultricies.
+**Pulse Robot** is a next-generation humanoid robot platform powered by cutting-edge AI technology. It offers human-like interaction, adaptive behavior, and seamless integration into modern systems — making it the perfect solution for businesses and research in robotics and automation.
 
-Venenatis cras sed felis eget velit. Consectetur libero id faucibus nisl tincidunt. Gravida in fermentum et sollicitudin ac orci phasellus egestas tellus. Volutpat consequat mauris nunc congue nisi vitae. Id aliquet risus feugiat in ante metus dictum at tempor. Sed blandit libero volutpat sed cras. Sed odio morbi quis commodo odio aenean sed adipiscing. Velit euismod in pellentesque massa placerat. Mi bibendum neque egestas congue quisque egestas diam in arcu. Nisi lacus sed viverra tellus in. Nibh cras pulvinar mattis nunc sed. Luctus accumsan tortor posuere ac ut consequat semper viverra. Fringilla ut morbi tincidunt augue interdum velit euismod.
+### ✨ Features
 
-## Lorem Ipsum
+- **Advanced AI Capabilities** – Human-like intuition and contextual understanding 🤖
+- **Humanoid Design** – Life-like movements, gestures, and facial expressions 🦿
+- **Adaptive Learning** – Learns from user interaction and behavior 📈
+- **Seamless Integration** – Connects easily with existing infrastructure 🔌
 
-Tristique senectus et netus et malesuada fames ac turpis. Ridiculous mus mauris vitae ultricies leo integer malesuada nunc vel. In mollis nunc sed id semper. Egestas tellus rutrum tellus pellentesque. Phasellus vestibulum lorem sed risus ultricies tristique nulla. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. Eros donec ac odio tempor orci dapibus ultrices. Aliquam sem et tortor consequat id porta nibh. Adipiscing elit duis tristique sollicitudin nibh sit amet commodo nulla. Diam vulputate ut pharetra sit amet. Ut tellus elementum sagittis vitae et leo. Arcu non odio euismod lacinia at quis risus sed vulputate.
+---
 
-> Just a testing quote
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18.0.0 or higher
+- npm 8.0.0 or higher
+
+### Installation
+
+```bash
+git clone https://github.com/yourusername/pulse-robot.git
+cd pulse-robot
+npm install
+npm run dev
+```
+
+---
+
+## 🛠️ Built With
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn/ui
+
+---
+
+## 📝 Editing This Project
+
+### Using Your Preferred IDE
+
+```bash
+git clone <YOUR_GIT_URL>
+cd <YOUR_PROJECT_NAME>
+npm install
+npm run dev
+```
+
+### Or Edit Directly in GitHub
+
+- Navigate to the file(s)
+- Click the **Edit** (✏️) button
+- Make your changes and commit
+
+### Or Use GitHub Codespaces
+
+- Go to the repository
+- Click **Code → Codespaces**
+- Click **New codespace**
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request to improve Pulse Robot together.
+
+---
+
+## 📄 License
+
+Licensed under the [MIT License](LICENSE).
+
+---
+
+## 👥 Credits
+
+Built by **Tholumuzi**, **@rezaularif**, and **@lovable.dev** —  
+Made with ❤️ for the future of robotics.
