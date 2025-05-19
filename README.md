@@ -42,11 +42,6 @@ git clone https://github.com/Vitaly-Stefanyshyn777/my-portfolio.git
 
 ```
 
-Go to the project directory
-
-```bash
-cd satnaing.dev
-```
 
 Remove remote origin
 
