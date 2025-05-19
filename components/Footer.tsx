@@ -81,7 +81,7 @@ const socialLinks = [
   {
     id: 3,
     title: "Check Sat Naing on Dev.to",
-    // link: "https://dev.to/satnaing",
+
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -96,7 +96,6 @@ const socialLinks = [
   {
     id: 4,
     title: "Sat Naing's Profile on Facebook",
-    // link: "https://www.facebook.com/satnaing.dev",
     svg: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
