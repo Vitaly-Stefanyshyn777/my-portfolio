@@ -7,7 +7,7 @@ tags:
   - TailwindCSS
   - HeadlessCMS
   - Blog
-author: Sat Naing
+author: Vitaliy Stefanyshyn
 type: article
 coverImage: /portfolio.png
 coverImageAlt: Macbook at a cafe

@@ -5,7 +5,7 @@ excerpt: Pulse Robot is a next-generation humanoid robot platform powered by cut
 datetime: 2020-06-17T05:35:07.000+00:00
 featured: false
 category: Random
-author: Sat Naing
+author: Vitaliy Stefanyshyn
 type: article
 coverImage: /Robot.png
 coverImageAlt: Tip calculator website on a laptop and a mobile device
